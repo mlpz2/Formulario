@@ -1,5 +1,5 @@
 Formulario
-<img align="center" width="80%" height="80%" src="https://placekitten.com/300/150"/>
+<img align="center" width="30%" height="30%" src="https://placekitten.com/300/150"/>
 
 practicasFormularioCavanilles23.github.io
 
