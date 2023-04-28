@@ -1,6 +1,5 @@
-#Formulario
-<h1 align="center"><img src="https://placekitten.com/300/150"/></h1>
-
+Formulario
+<img align="center" width="80%" height="80%" src="https://placekitten.com/300/150"/>
 
 practicasFormularioCavanilles23.github.io
 
