@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,20 +11,52 @@
 </head>
 <body>
 	<div class="container">
-		<h1>Formulario</h1>
-		<form action="guardar.php" method="post">
-			<div class="form-group">
-				<label for="ciudad">Ciudad:</label>
-				<input type="text" class="form-control" id="ciudad" name="ciudad">
+		<h1 color="red">Rellene sus datos por favor</h1>
+
+		<form id="formulario" class="row g-3 needs-validation" action="https://mlpz2.github.io/formulario/guardar.php" method="get">
+
+			<div id="ciudad" class="row" class="form-group">
+				<label class="etiqueta" for="exampleFormControlSelect1">Ciudad</label>
+				<select class="form-control" id="exampleFormControlSelect1" placeholder="Madrid" name="cityName">
+					<option>Barcelona</option>
+					<option>Sevilla</option>
+					<option>Galicia</option>
+					<option>Bilbao</option>
+					</select>
 			</div>
-			<div class="form-group">
-				<label for="pais">País:</label>
-				<input type="text" class="form-control" id="pais" name="pais">
-			</div>
-			<div class="form-group">
-				<label for="idioma">Idioma:</label>
-				<input type="text" class="form-control" id="idioma" name="idioma">
-			</div>
+
+
+				<div id="pais" class="row" class="form-group">
+					<label class="etiqueta" for="exampleFormControlSelect1">País</label>
+					<select class="form-control" id="exampleFormControlSelect1" placeholder="España" name="countryName">
+						<option>Holanda</option>
+						<option>Italia</option>
+						<option>Francia</option>
+						<option>Alemania</option>
+						</select>
+				</div>
+
+
+					<div id="idioma" class="row" class="form-group">
+						<label class="etiqueta" for="exampleFormControlSelect1">Idioma</label>
+						<select class="form-control" id="exampleFormControlSelect1" placeholder="Español" name="language">
+							<option>Catalán</option>
+							<option>Gallego</option>
+							<option>Vasco</option>
+							<option>Inglés</option>
+							</select>
+					</div>
+
+					<div id="poblacion" class="row" class="form-group">
+						<label class="etiqueta" for="exampleFormControlSelect1">Población</label>
+						<select class="form-control" id="exampleFormControlSelect1" placeholder="2" name="poblation">
+							<option>5</option>
+							<option>10</option>
+							<option>100.000</option>
+							<option>200.000</option>
+							</select>
+					</div>
+
 			<button type="submit" class="btn btn-primary">Guardar</button>
 		</form>
 	</div>
@@ -31,4 +64,27 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
+
+	<!--<label for="ciudad">Ciudad:</label>
+<input type="text" class="form-control" id="ciudad" name="ciudad">
+<label for="pais">País:</label>
+<input type="text" class="form-control" id="pais" name="pais">
+<label for="idioma">Idioma:</label>
+<input type="text" class="form-control" id="idioma" name="idioma">
+<div class="form-group">
+
+</div>
+<div class="form-group">
+
+</div>
+https://placekitten.com/300/150
+<head><title>Gatos</title>
+<style>
+  body{
+    background-image:url("https://placekitten.com/300/150");
+    background-repeat:true;
+  }</style></head>
+  Vemto
+-->

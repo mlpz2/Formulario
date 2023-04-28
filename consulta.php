@@ -1,4 +1,5 @@
 
+
 <?php
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
@@ -26,23 +27,20 @@ if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
 }
 
-// Obtiene los datos del formulario
-$ciudad = $_GET['ciudad'];
-$pais = $_GET['pais'];
-$idioma = $_GET['idioma'];
-$poblacion = $_GET['poblacion'];
-
 // Prepara la consulta SQL
-$sql = "INSERT INTO country (ciudad, pais, idioma, poblacion) VALUES ('$cityName', '$countryName', '$language', '$poblation')";
-
+$consultaSQL = "INSERT INTO country (ciudad, pais, idioma, poblacion) VALUES ('$cityName', '$countryName', '$language', '$poblation')";
 // Ejecuta la consulta SQL
-if ($conn->query($sql) === TRUE) {
-    echo "Datos guardados correctamente";
+$resultado = $conn->query($consultaSQL);
+
+// Muestra los datos
+if ($resultado->num_rows > 0) {
+    while($fila = $resultado->fetch_assoc()) {
+        echo "Ciudad: " . $fila["ciudad"] . " - País: " . $fila["pais"] . " - Idioma: " . $fila["idioma"] . " - Población: " - $fila["poblacion"] - "<br>";
+    }
 } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    echo "No se encontraron datos";
 }
 
 // Cierra la conexión
 $conn->close();
-
-
+?>
