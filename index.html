@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 
     <meta charset="UTF-8">
@@ -13,51 +13,58 @@
 	<div class="container">
 		<h1 color="red">Rellene sus datos por favor</h1>
 
-		<form id="formulario" class="row g-3 needs-validation" action="https://mlpz2.github.io/formulario/guardar.php" method="get">
+		<form id="formulario" class="row g-3 needs-validation" action="guardar.php" method="GET">
 
-			<div id="ciudad" class="row" class="form-group">
-				<label class="etiqueta" for="exampleFormControlSelect1">Ciudad</label>
-				<select class="form-control" id="exampleFormControlSelect1" placeholder="Madrid" name="cityName">
-					<option>Barcelona</option>
-					<option>Sevilla</option>
-					<option>Galicia</option>
-					<option>Bilbao</option>
+			<div id="ciudad" class="d-flex gap-10 row form-group">
+				<label for="formControlSelect1">Ciudad</label>
+				<select class="form-control" id="formControlSelect1" placeholder="Roma" name="cityName">
+					<option>Ámsterdam</option>
+					<option>Roma</option>
+					<option>París</option>
+					<option>Berlín</option>
+					<option>Madrid</option>
 					</select>
 			</div>
 
 
-				<div id="pais" class="row" class="form-group">
-					<label class="etiqueta" for="exampleFormControlSelect1">País</label>
-					<select class="form-control" id="exampleFormControlSelect1" placeholder="España" name="countryName">
+				<div id="pais" class="d-flex gap-10 row form-group">
+					<label for="formControlSelect2">País</label>
+					<select class="form-control" id="formControlSelect2" placeholder="Italia" name="countryName">
 						<option>Holanda</option>
 						<option>Italia</option>
 						<option>Francia</option>
 						<option>Alemania</option>
+						<option>España</option>
 						</select>
 				</div>
 
 
-					<div id="idioma" class="row" class="form-group">
-						<label class="etiqueta" for="exampleFormControlSelect1">Idioma</label>
-						<select class="form-control" id="exampleFormControlSelect1" placeholder="Español" name="language">
-							<option>Catalán</option>
-							<option>Gallego</option>
-							<option>Vasco</option>
+					<div id="idioma" class="d-flex gap-10 row form-group">
+						<label for="formControlSelect3">Idioma</label>
+						<select class="form-control" id="formControlSelect3" placeholder="Italiano" name="language">
+							<option>Holandés</option>
+							<option>Italiano</option>
+							<option>Francés</option>
 							<option>Inglés</option>
+							<option>Alemán</option>
+							<option>Español</option>
 							</select>
 					</div>
 
-					<div id="poblacion" class="row" class="form-group">
-						<label class="etiqueta" for="exampleFormControlSelect1">Población</label>
-						<select class="form-control" id="exampleFormControlSelect1" placeholder="2" name="poblation">
+					<div id="poblacion" class="d-flex gap-10 row form-group">
+						<label for="formControlSelect4">Población</label>
+						<select class="form-control" id="formControlSelect4" placeholder="5" name="poblation">
 							<option>5</option>
 							<option>10</option>
 							<option>100.000</option>
 							<option>200.000</option>
+							<option>500.000</option>
+							<option>1.000.000</option>
+							<option>1.000.000+</option>
 							</select>
 					</div>
 
-			<button type="submit" class="btn btn-primary">Guardar</button>
+			<button type="submit" class="btn btn-primary">Enviar</button>
 		</form>
 	</div>
 	<!-- JS de Bootstrap (requiere jQuery) -->
@@ -66,25 +73,3 @@
 </body>
 
 </html>
-
-	<!--<label for="ciudad">Ciudad:</label>
-<input type="text" class="form-control" id="ciudad" name="ciudad">
-<label for="pais">País:</label>
-<input type="text" class="form-control" id="pais" name="pais">
-<label for="idioma">Idioma:</label>
-<input type="text" class="form-control" id="idioma" name="idioma">
-<div class="form-group">
-
-</div>
-<div class="form-group">
-
-</div>
-https://placekitten.com/300/150
-<head><title>Gatos</title>
-<style>
-  body{
-    background-image:url("https://placekitten.com/300/150");
-    background-repeat:true;
-  }</style></head>
-  Vemto
--->
