@@ -14,10 +14,10 @@ if ($conn->connect_error) {
 }
 
 // Obtiene los datos del formulario
-$ciudad = $_GET['ciudad'];
-$pais = $_GET['pais'];
-$idioma = $_GET['idioma'];
-$poblacion = $_GET['poblacion'];
+$ciudad = $_POST['ciudad'];
+$pais = $_POST['pais'];
+$idioma = $_POST['idioma'];
+$poblacion = $_POST['poblacion'];
 
 // Prepara la consulta SQL
 $sql = "INSERT INTO country (ciudad, pais, idioma, poblacion) VALUES ('$cityName', '$countryName', '$language', '$poblation')";
